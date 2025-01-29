@@ -1,0 +1,93 @@
+{% extends 'FirstApp/base.html' %}
+
+
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% block content %}
+<title>About</title>
+<h2>ABOUT ME</h2>
+    <img src="{% static 'images/babu2.jpg' %}">
+<div class="About">
+    <div id="about">
+        <p>
+        "Hello! I’m Babu, a passionate web developer with a foundation in Electrical and Electronics Engineering. My journey started with a love for problem-solving and creating things that make an impact. I transitioned into web development, combining my technical background with my interest in design and user experience. Today, I focus on building responsive, dynamic websites and applications using tools like Python, Django, HTML/CSS, and JavaScript.
+        </p>
+    </div>
+    <div class="container2">
+        <ul class="prsn">
+            <li>
+                <span class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                        <path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/>
+                    </svg>
+                    <strong>Birthday:</strong> 10/June/2002
+                </span>
+            </li>
+            <li>
+                <span class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" >
+                        <path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/>
+                    </svg>
+                    <strong>City:</strong> Hyderabad
+                </span>
+            </li>
+        </ul>
+        <ul class="prsn">
+            <li>
+                <span class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" color="#12d640">
+                        <path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/>
+                    </svg>
+                    <strong>Email:</strong> babuarrolla1@mail.com
+                </span>
+            </li>
+            <li>
+                <span class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" color="#12d640">
+                        <path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/>
+                    </svg>
+                    <strong>Phone:</strong> +91-xxxxxx9626
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<br>
+<div class="section-title">
+    <h2>INTERESTS</h2>
+</div>
+
+<div class="interests-container">
+    <div class="interest-item">
+        <i class="ri-movie-line"></i>
+        <p>Movies</p>
+    </div>
+
+    <div class="interest-item">
+        <i class="ri-music-2-line"></i>
+        <p>Music</p>
+    </div>
+
+    <div class="interest-item">
+        <i class="ri-code-box-line"></i>
+        <p>Coding</p>
+    </div>
+
+    <div class="interest-item">
+        <i class="ri-cricket-line"></i>
+        <p>Cricket</p>
+    </div>
+
+    <div class="interest-item">
+        <i class="ri-plane-line"></i>
+        <p>Travelling</p>
+    </div>
+</div>
+
+</div>
+
+
+{% endblock %}

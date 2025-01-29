@@ -1,0 +1,43 @@
+{% extends "FirstApp/base.html" %}
+{% block content %}
+{% load static %}
+<title>Cerfications</title>
+<div class="certifications-container">
+    <header class="section-title">
+        <h2>Certifications</h2>
+    </header>
+
+    <div class="certifications-content">
+        <!-- Full Stack Web Development Internship -->
+        <div class="certification-card">
+                    <a href="{% static 'images/swecha certificate.jpg' %}" target="_blank">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.HdeWUEl7-cdrzENPs6KueQAAAA&pid=Api&P=0&h=220" alt="Full Stack Web Development Internship" class="certification-img">
+        <div class="certification-info">
+                <h3>Full Stack Web Development Internship</h3>
+                <p><strong>Issued by:</strong> Swecha</p>
+                <p><strong>Date:</strong> 2023</p>
+            </div></div>
+        <!-- Python Bootcamp: Zero to Hero -->
+        <div class="certification-card">
+            <a href="https://www.udemy.com/certificate/UC-b9ef8602-36d6-42e8-b867-557709856cf1/" target="_blank">
+            <img src="https://keystoneacademic-res.cloudinary.com/image/upload/f_auto/q_auto/g_auto/c_fill/w_1280/element/17/172834_default-meta-image-v2.png" alt="Python Bootcamp: Zero to Hero" class="certification-img">
+            <div class="certification-info">
+                <h3>Python Bootcamp: Zero to Hero</h3>
+                <p><strong>Issued by:</strong> Udemy</p>
+                <p><strong>Date:</strong> 2024</p>
+            </div>
+        </div>
+
+        <!-- Python Essential 1 & 2 Badges -->
+        <div class="certification-card">
+                        <a href="https://www.netacad.com/" target="_blank">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.7_MlVhZw0dpNm6GoRB-yVAHaFO&pid=Api&P=0&h=220" alt="Python Essential 1 & 2 Badges" class="certification-img">
+            <div class="certification-info">
+                <h3>Python Essential 1 & 2 Badges</h3>
+                <p><strong>Issued by:</strong> Cisco Networking Academy</p>
+                <p><strong>Date:</strong> 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

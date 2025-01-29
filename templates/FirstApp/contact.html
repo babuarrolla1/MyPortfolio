@@ -1,0 +1,35 @@
+<!-- contact.html -->
+{% extends "FirstApp/base.html" %}
+
+{% block content %}
+<title>Contact</title>
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>If you'd like to discuss a project, ask questions, or just say hello, feel free to send me a message!</p>
+        <div class="contact-details">
+            <p><i class="ri-mail-line"></i> <strong>Email:</strong> <a href="mailto:babuarrolla1@gmail.com">babuarrolla1@gmail.com</a></p>
+            <p><i class="ri-phone-line"></i> <strong>Phone:</strong> <a href="tel:+123456789">+123456789</a></p>
+            <p><i class="ri-map-pin-line"></i> <strong>Location:</strong> Hyderabad,India</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form method="POST" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

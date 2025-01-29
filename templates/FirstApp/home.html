@@ -1,0 +1,29 @@
+{% extends 'FirstApp/base.html' %}
+
+
+{% load static %}
+{% block content %}
+    <title>Arrolla Babu</title>
+    <img src="{% static 'images/babu2.jpg' %}" alt="Profile Image" class="profile-image">
+    <h1 id="welcome">WELCOME  TO MY PROFILE</h1>
+    <br>
+    <br>
+    <p id="about-me">"I’m a passionate and detail-oriented developer with a commitment to excellence, driven to create innovative and efficient solutions.<br> With strong project management skills and a focus on delivering results on time, I bring ideas to life through clean, high-quality code. <br>I thrive in tackling challenges, continuously learning, and pushing boundaries to achieve impactful outcomes that make a difference."</p>
+    <div class="btn-group">
+      <a href="{% url 'about' %}" class="btn btn-warning">more about me ></a>
+    </div>
+    <div class="social-links">
+        <!-- GitHub -->
+        <a href="https://github.com/babuarrolla1" target=_blank">
+            <i class="fab fa-github" style="font-size: 30px; color: white;"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/babu-arrolla" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 30px; color: #1e7bf4;"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/baabu_2324" target="_blank">
+            <i class="fab fa-instagram" style="font-size: 30px; color: #f80606;"></i>
+        </a>
+    </div>
+{% endblock %}
